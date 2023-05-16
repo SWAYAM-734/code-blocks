@@ -1,0 +1,48 @@
+body {
+    background-image: url(https://static.businessworld.in/article/article_extra_large_image/1587634866_4yJWuK_Chitkara_University_Image.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+form {
+    background-color: rgb(0,0,0,0.7);
+    padding-top: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54%;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 10px;
+    padding-bottom: 60px;
+
+}
+.heading {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+    color: black;
+}
+#subheading {
+    font-size: 10px;
+    margin-top: 10px;
+}
+#content1{
+    width: 90%;
+    margin: auto;
+}
+.borderexample {
+    border-width :2px;
+    width: 5rem;
+    border-style:solid;
+    border-color:#faf4f2;
+    padding-inline: 1rem;
+    margin-inline: 1rem;
+}
+a:link{
+    
+    text-decoration: underline;
+    color: rgb(227, 127, 13);
+}
+            

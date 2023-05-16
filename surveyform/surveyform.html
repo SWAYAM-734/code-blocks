@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>survey form></form>
+    </title>
+    <link rel="stylesheet" href="../surveyform.css">
+</head>
+
+<body>
+
+    <div class="heading">
+        <h1 id="head">SURVEY FORM</h1>
+        <h2 id="subheading">thank you for taking the time to help us improve the platform</h2>
+    </div>
+    <form action="https://formsubmit.co/swayamsonak2004@gamil.com" >
+        <div id="content1">
+            <p>Personal Details</p>
+            <label>Name</label><br><br>
+            <input type="text" name="text" placeholder="Enter your name" id="nameInput" class="box"><br><br>
+            <button onclick="something()">Save</button>
+            <button onclick="show()">Show</button>
+            <label>Email</label><br><br>
+            <input type="email" name="email"  id = "email" placeholder="Enter your email" class="box"><br><br>
+            <label>AGE</label><br><br>
+            <input type="number" name="number" placeholder="Enter your age" id="num" class="box" min="50" max="49"><br><br>
+            <label>Address</label><br><br>
+            <textarea name="Address" id="address" cols="40" rows="10" placeholder="Enter your address" ></textarea>
+            <br><br>
+            <label>Contact</label><br><br>
+            <input type="number" name="number" placeholder="Enter your phone number" class="box" min="1000000000"
+                max="9999999999" id="number"><br><br>
+            <label>Course</label><br><br>
+
+
+
+            <div id="option1">
+                <select>
+
+                    <option name="select your course">select your course</option>
+                    <option value="ENGINEERING PROGRAMS">ENGINEERING PROGRAMS</option>
+                    <option value="COMPUTER APPLICATION PROGRAMS">COMPUTER APPLICATION PROGRAMS</option>
+                    <option value="BUSINESS & ACCOUNTING">BUSINESS & ACCOUNTING</option>
+                    <option value="HOSPITALITY & HOTEL MGMT">HOSPITALITY & HOTEL MGMT</option>
+                    <option value="DESIGN SCHOOL">DESIGN SCHOOL</option>
+                    <option value="JOURNALISM & MASS COMM.">JOURNALISM & MASS COMM.</option>
+                    <option value="LAW">LAW</option>
+                    <option value="PLANNING & ARCHITECTURE">PLANNING & ARCHITECTURE</option>
+                    <option value="PHARMACEUTICAL SCIENCES">PHARMACEUTICAL SCIENCES</option>
+                    <option value="B.E. LATERAL ENTERY">B.E. LATERAL ENTERY</option>
+                    <option value="ALLIED HEALTH SCIENCES">ALLIED HEALTH SCIENCES</option>
+                </select>
+
+                <br><br><label>Branch</label><br><br>
+
+
+                <div id="option1">
+                    <select>
+
+                        <option name="Branch name">Branch name</option>
+                        <option value="computer science and engineering">computer science and engineering</option>
+                        <option value="electronics & comm. enginnering">electronics & comm. enginnering</option>
+                        <option value="electrical enginnering">electrical enginnering</option>
+                        <option value="civil enginnering">civil enginnering</option>
+                        <option value="mechanical enginnering">mechanical enginnering</option>
+                        <option value="mechatronics engineering">mechatronics engineering</option>
+                        <option value="automobile engineering with ARAI">automobile engineering with ARAI</option>
+                        <option value="software engineering with Deakin University">software engineering with Deakin
+                            University</option>
+                    </select>
+
+                    <br>
+                    <br>
+                    <label id="head1">Gender</label><br><br>
+                    <label for="male">
+                        <input type="radio" name="radio4" class="ld" id="male">Male
+                    </label>
+                    <label for="female">
+                        <input type="radio" name="radio4" class="l" id="female">Female
+                    </label>
+                    <label for="Other">
+                        <input type="radio" name="radio4" class="lar" id="Other">Other
+                    </label>
+                    <br><br>
+                    <label id="head1">Are You Dayscholar or Hosteller ?</label><br><br>
+                    <label for="ds"><input type="radio" name="radio2" class="larger" id="ds">Dayscholar</label>
+                    <label for="nds"><input type="radio" name="radio2" class="larger" id="nds">Hosteller</label><br><br>
+
+                    <br /><button id="btn">
+                    <div
+                        style="width: 150px; display: flex; justify-content: center;  margin-inline: auto;  padding-inline:2rem;padding: 6px;cursor: pointer;"><b> send  </b>
+                        
+                    </div></button>
+                    
+
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </form>
+    <div id="mailBody"><table border=1> <tr><td>blabla</td></tr> </table></div>
+<input type="button" onclick="sendMail();">
+
+
+
+    </div>
+</body>
+
+<script>
+    const input = document.getElementById("nameInput");
+
+    function something() {
+        localStorage.setItem("username", input.value);
+        
+    }
+    function show(){
+        console.log(localStorage.getItem("username"));
+    }
+</script>
+
+</html>
